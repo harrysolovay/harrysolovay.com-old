@@ -1,0 +1,94 @@
+
+
+
+.work {
+	
+	margin : 51px auto 0px auto;
+	max-width : 1000px;
+	
+	> div {
+		@include clearfix;
+		padding : 2.5%;
+	}
+	
+	a {
+		position : relative;
+		display : block;
+		margin : 2.5%;
+		float : left;
+		border : 1px solid $a-color;
+		color : $a-color;
+		box-sizing : border-box;
+		transition : border .25s ease;
+		
+		&:hover {
+			border : 1px solid $a-color-hover;
+			.label {
+				border-top : 1px solid $a-color-hover;
+				color : $a-color-hover;
+			}
+		}
+		
+		&:active {
+			border : 1px solid $a-color-active;
+			.label {
+				border-top : 1px solid $a-color-active;
+				color : $a-color-active;
+			}
+		}
+		
+		.label {
+			position : absolute;
+			transition : border .25s ease;
+			bottom : 0px;
+			background-color : rgba(255, 255, 255, .875);
+			-webkit-backdrop-filter : blur(5px);
+			width : 100%;
+			text-align : center;
+			text-transform : uppercase;
+			font-family : 'futura-pt';
+			font-size : 17px;
+			line-height : 18px;
+			padding : 9px 0px 9px 0px;
+			border-top : 1px solid $a-color;
+			transition : border .25s ease, color .25s ease;
+		}
+		
+		.cover-with-image {
+			width : 100%;
+			padding-bottom : 100%;
+		}
+		
+	}
+	
+}
+
+@media screen and (max-width: 400px) {
+	.work a {
+  	width : 95%;
+  }
+}
+
+@media screen and (min-width : 401px) and (max-width: 600px) {
+	.work a {
+  	width : 45%;
+  }
+}
+
+@media screen and (min-width : 601px) and (max-width: 720px) {
+	.work a {
+  	width : 95%;
+  }
+}
+
+@media screen and (min-width: 721px) and (max-width: 960px) {
+  .work a {
+  	width : 45%;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .work a {
+  	width : 28.333333%;
+  }
+}

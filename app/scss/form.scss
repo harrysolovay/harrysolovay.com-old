@@ -1,0 +1,177 @@
+
+
+
+$input-border-color : rgb(102, 102, 102);
+$input-border-color-hover : rgb(0, 0, 0);
+$input-border-color-focus : rgb(15, 160, 206);
+$input-border-color-checked : rgb(15, 160, 206);
+
+$button-border-color : rgb(102, 102, 102);
+$button-text-color : rgb(102, 102, 102);
+$button-border-color-hover : rgb(0, 0, 0);
+$button-text-color-hover : rgb(0, 0, 0);
+$button-border-color-active : rgb(102, 102, 102);
+$button-text-color-active : rgb(102, 102, 102);
+
+
+
+form {
+	max-width : 600px;
+	margin : 0px auto;
+	padding : 12px 0px 48px 0px;
+}
+
+
+
+input, textarea, button {
+
+	box-sizing : border-box;
+	border : 1px solid $input-border-color;
+	margin : 0px;
+	background-color : #ffffff;
+
+}
+
+
+
+input[type='text'],
+input[type='email'],
+textarea,
+button {
+
+	display : block;
+	width : 100%;
+	border-radius : 0px;
+	padding : 6px 12px 6px 11px;
+	margin-top : 5px;
+	
+}
+
+
+
+input[type='checkbox'] {
+	
+	margin-left : 5px;
+	position : relative;
+	top : 3px;
+	display : inline-block;
+	border-radius : 50%;
+	width : 18px;
+	height : 18px;
+	
+	&:checked {
+		background-color : $input-border-color-checked;
+	}
+	
+}
+
+
+
+textarea {
+
+	resize : none;
+	height : 194px;
+	
+}
+
+
+
+input, textarea {
+
+	font-family : 'raleway';
+	font-weight : 400;
+	font-size : 17px;
+	line-height : 24px;
+
+	&:hover {
+		border : 1px solid $input-border-color-hover;
+	}
+
+	&:focus {
+		border : 1px solid $input-border-color-focus;
+	}
+		
+}
+	
+	
+	
+button {
+	
+	width : 90%;
+	margin-top : 0px;
+	color : $button-text-color;
+	font-family : 'futura-pt';
+  font-weight : 300;
+  font-size : 18px;
+  line-height : 24px;
+  text-transform : uppercase;
+  cursor : pointer;
+
+	&:hover {
+		color : $button-text-color-hover;
+		border : 1px solid $button-border-color-hover;
+	}
+	
+	&:active {
+		color : $button-text-color-active;
+		border : 1px solid $button-border-color-active;
+	}
+	
+}
+
+
+
+.checkbox-input-group,
+.text-input-group {
+
+	margin-top : 18px;
+	
+	
+	.label {
+		display : inline-block;
+		position : relative;
+		left : -1.5px;
+		text-align : left;
+		font-family : 'futura-pt';
+  	font-weight : 300;
+  	font-size : 18px;
+  	line-height : 24px;
+  	text-transform : uppercase;
+  	cursor : pointer;
+	}
+
+}
+
+
+
+button,
+.checkbox-input-group,
+.text-input-group {
+	margin-left : 5%;
+}
+
+
+
+.text-input-group {
+	display : block;
+	width : 90%;
+	.label {
+		text-decoration : underline;
+	}
+}
+
+.checkbox-input-group {
+	display : inline-block;
+	margin-bottom : 17px;
+}
+
+
+
+[ng-message] {
+	display : block;
+	box-sizing : border-box;
+	margin-top : 12px;
+	padding : 7px 11px 5px 11px;
+	border : 1px solid rgb(242, 38, 19);
+	background-color : rgba(242, 38, 19, .25);
+}

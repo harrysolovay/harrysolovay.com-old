@@ -1,0 +1,38 @@
+
+
+
+$a-color : rgb(0, 0, 0);
+$a-color-hover : rgb(15, 160, 206);
+$a-color-active : rgb(102, 102, 102);
+
+
+
+a, input, textarea, button {
+
+	display : inline-block;
+		
+	transition : background-color .25s ease, color .25s ease, border .25s ease;
+	
+	-webkit-appearance : none;
+	-webkit-tap-highlight-color : transparent;
+	
+}
+
+
+
+a {
+
+	color : $a-color;
+	
+	&:hover {
+		color : $a-color-hover;
+	}
+	
+	&:active,
+	&.current {
+		color : $a-color-active;
+	}
+	
+}
+
+

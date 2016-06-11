@@ -1,0 +1,42 @@
+<section id='contact'>
+	<div class='inner-section'>
+	
+		<form name='submission' ng-submit='submit()'>
+		
+			<label class='text-input-group' for='name'>
+				<div class='label'>Name</div>
+				<input id='name' name='name' ng-model='submission.theName' type='text' required autofocus>
+				<div ng-messages='submission.name.$error' ng-if='submission.name.$touched'>
+					<div ng-message='required'>* Please enter your name</div>
+				</div>
+			</label>
+			
+			<label class='text-input-group' for='email'>
+				<div class='label'>Email</div>
+				<input id='email' name='email' ng-model='submission.theEmail' type='email' required>
+				<div ng-messages='submission.email.$error' ng-if='submission.email.$touched'>
+					<div ng-message='required'>* Please enter your email address</div>
+					<div ng-message='email'>* Please enter a valid email address</div>
+				</div>
+			</label>
+			
+			<label class='text-input-group' for='message'>
+				<div class='label'>Message</div>
+				<textarea id='message' name='message' ng-model='submission.theMessage' ng-maxlength='2000' maxlength='2000' required></textarea>
+				<div ng-messages='submission.message.$error' ng-if='submission.message.$touched'>
+					<div ng-message='required'>* No message?</div>
+					<div ng-message='maxlength'>* Your message unfortunately can&#x27;t exceed 20,000 characters</div>
+				</div>
+			</label>
+			
+			<label class='checkbox-input-group' for='send-user-a-copy'>
+				<div class='label'>Send me a copy</div>
+				<input id='send-user-a-copy' name='sendUserACopy' ng-model='submission.theSendUserACopy' type='checkbox'>
+			</label>
+		
+			<button type='submit'>Submit</button>
+		
+		</form>
+	
+	</div>
+</section>

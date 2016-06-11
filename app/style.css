@@ -1,0 +1,651 @@
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, scss/base.scss */
+html, body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: 'raleway';
+  font-weight: 200;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* line 17, scss/base.scss */
+::webkit-scrollbar {
+  display: none;
+}
+
+/* line 23, scss/base.scss */
+*,
+*:focus {
+  outline: none;
+}
+
+/* line 30, scss/base.scss */
+[main] {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  text-align: left;
+}
+
+/* line 2, scss/utility.scss */
+.cover-with-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 8, scss/utility.scss */
+.contain-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* line 10, scss/clickables.scss */
+a, input, textarea, button {
+  display: inline-block;
+  -webkit-transition: background-color .25s ease, color .25s ease, border .25s ease;
+  transition: background-color .25s ease, color .25s ease, border .25s ease;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 23, scss/clickables.scss */
+a {
+  color: black;
+}
+/* line 27, scss/clickables.scss */
+a:hover {
+  color: #0fa0ce;
+}
+/* line 31, scss/clickables.scss */
+a:active, a.current {
+  color: #666666;
+}
+
+/* line 18, scss/form.scss */
+form {
+  max-width: 600px;
+  margin: 0px auto;
+  padding: 12px 0px 48px 0px;
+}
+
+/* line 26, scss/form.scss */
+input, textarea, button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #666666;
+  margin: 0px;
+  background-color: #ffffff;
+}
+
+/* line 37, scss/form.scss */
+input[type='text'],
+input[type='email'],
+textarea,
+button {
+  display: block;
+  width: 100%;
+  border-radius: 0px;
+  padding: 6px 12px 6px 11px;
+  margin-top: 5px;
+}
+
+/* line 52, scss/form.scss */
+input[type='checkbox'] {
+  margin-left: 5px;
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+}
+/* line 62, scss/form.scss */
+input[type='checkbox']:checked {
+  background-color: #0fa0ce;
+}
+
+/* line 70, scss/form.scss */
+textarea {
+  resize: none;
+  height: 194px;
+}
+
+/* line 79, scss/form.scss */
+input, textarea {
+  font-family: 'raleway';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+}
+/* line 86, scss/form.scss */
+input:hover, textarea:hover {
+  border: 1px solid black;
+}
+/* line 90, scss/form.scss */
+input:focus, textarea:focus {
+  border: 1px solid #0fa0ce;
+}
+
+/* line 98, scss/form.scss */
+button {
+  width: 90%;
+  margin-top: 0px;
+  color: #666666;
+  font-family: 'futura-pt';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/* line 110, scss/form.scss */
+button:hover {
+  color: black;
+  border: 1px solid black;
+}
+/* line 115, scss/form.scss */
+button:active {
+  color: #666666;
+  border: 1px solid #666666;
+}
+
+/* line 124, scss/form.scss */
+.checkbox-input-group,
+.text-input-group {
+  margin-top: 18px;
+}
+/* line 130, scss/form.scss */
+.checkbox-input-group .label,
+.text-input-group .label {
+  display: inline-block;
+  position: relative;
+  left: -1.5px;
+  text-align: left;
+  font-family: 'futura-pt';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* line 147, scss/form.scss */
+button,
+.checkbox-input-group,
+.text-input-group {
+  margin-left: 5%;
+}
+
+/* line 155, scss/form.scss */
+.text-input-group {
+  display: block;
+  width: 90%;
+}
+/* line 158, scss/form.scss */
+.text-input-group .label {
+  text-decoration: underline;
+}
+
+/* line 163, scss/form.scss */
+.checkbox-input-group {
+  display: inline-block;
+  margin-bottom: 17px;
+}
+
+/* line 170, scss/form.scss */
+[ng-message] {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 12px;
+  padding: 7px 11px 5px 11px;
+  border: 1px solid #f22613;
+  background-color: rgba(242, 38, 19, 0.25);
+}
+
+/* line 3, scss/hr.scss */
+hr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 0px;
+  padding: 0px;
+  border-width: 0px;
+  background-color: #dddddd;
+}
+
+/* line 1, scss/section.scss */
+section {
+  margin-top: 51px;
+  text-align: left;
+}
+/* line 5, scss/section.scss */
+section .text-group {
+  position: relative;
+  z-index: 0;
+  width: 90%;
+  padding: 22px 5% 18px 5%;
+  margin: 0px auto;
+  max-width: 800px;
+  font-family: 'raleway';
+}
+/* line 16, scss/section.scss */
+section .text-group .title {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 6px;
+}
+/* line 23, scss/section.scss */
+section .text-group .text, section .text-group a, section .text-group li {
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 24px;
+}
+/* line 29, scss/section.scss */
+section .text-group hr {
+  margin: 18px 0px 20px 0px;
+}
+/* line 33, scss/section.scss */
+section .text-group ul {
+  list-style: circle inside;
+}
+
+/* line 1, scss/header.scss */
+header {
+  position: fixed;
+  z-index: 20;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  -webkit-transition: width ease-in-out 0.3s;
+  transition: width ease-in-out 0.3s;
+  border-bottom: 1px solid #e1e1e1;
+  background-color: rgba(251, 251, 251, 0.875);
+  -webkit-backdrop-filter: blur(5px);
+}
+/* line 13, scss/header.scss */
+header #current-view {
+  display: block;
+  float: left;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'futura-pt';
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  padding: 10px 15px;
+  -webkit-transition: width ease-in-out 0.3s;
+  transition: width ease-in-out 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* line 27, scss/header.scss */
+header [paper-drawer-toggle] {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 30px;
+  height: 30px;
+  margin: 10px 15px;
+  background-image: url(images/burger.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  visibility: visible;
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+      -ms-user-select: auto;
+          user-select: auto;
+}
+
+@media screen and (min-width: 601px) {
+  /* line 46, scss/header.scss */
+  header {
+    width: -webkit-calc(100% - 256px);
+    width: calc(100% - 256px);
+  }
+
+  /* line 50, scss/header.scss */
+  header #current-view {
+    width: 100%;
+  }
+
+  /* line 54, scss/header.scss */
+  header [paper-drawer-toggle] {
+    visibility: hidden;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+}
+/* line 1, scss/nav.scss */
+#drawer {
+  width: 256px;
+  position: fixed;
+  z-index: 30;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  font-family: 'futura-pt';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: transparent !important;
+}
+
+/* line 19, scss/nav.scss */
+#scrim {
+  z-index: 29;
+}
+
+/* line 23, scss/nav.scss */
+nav {
+  border-right: 1px solid #e1e1e1;
+  background-color: rgba(251, 251, 251, 0.875);
+  -webkit-backdrop-filter: blur(5px);
+}
+/* line 29, scss/nav.scss */
+nav #internal {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+/* line 35, scss/nav.scss */
+nav #internal ul {
+  display: table-cell;
+  vertical-align: middle;
+  list-style: none;
+  width: 100%;
+}
+/* line 42, scss/nav.scss */
+nav #internal li {
+  display: block;
+  width: 100%;
+}
+/* line 47, scss/nav.scss */
+nav #internal a {
+  padding: 16px 0px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+/* line 55, scss/nav.scss */
+nav #external {
+  width: 100%;
+  position: absolute;
+  right: 0px;
+  bottom: 29px;
+  left: 0px;
+}
+/* line 63, scss/nav.scss */
+nav #external ul {
+  list-style: none;
+}
+/* line 67, scss/nav.scss */
+nav #external li {
+  display: inline-block;
+}
+/* line 71, scss/nav.scss */
+nav #external a {
+  padding: 5px;
+}
+
+/* line 1, scss/footer.scss */
+footer {
+  text-align: center;
+  font-family: 'futura-pt';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding: 45px 0px;
+}
+/* line 11, scss/footer.scss */
+footer ul {
+  display: block;
+  list-style: none;
+}
+/* line 16, scss/footer.scss */
+footer li {
+  display: inline-block;
+}
+/* line 20, scss/footer.scss */
+footer #social-media-links {
+  margin-bottom: 20px;
+}
+/* line 22, scss/footer.scss */
+footer #social-media-links a {
+  padding: 0px 3px;
+}
+/* line 24, scss/footer.scss */
+footer #social-media-links a.linked-in:hover {
+  color: #0077b5;
+}
+/* line 27, scss/footer.scss */
+footer #social-media-links a.instagram:hover {
+  color: #517fa4;
+}
+/* line 30, scss/footer.scss */
+footer #social-media-links a.google-plus:hover {
+  color: #dc4e41;
+}
+/* line 33, scss/footer.scss */
+footer #social-media-links a.github:hover {
+  color: #666666;
+}
+/* line 39, scss/footer.scss */
+footer #copyright {
+  color: #cccccc;
+}
+/* line 43, scss/footer.scss */
+footer .separator {
+  position: relative;
+  top: -2.5px;
+  font-size: 11px;
+  font-weight: 400;
+  padding: 0px 4px;
+}
+
+/* line 4, scss/work.scss */
+.work {
+  margin: 51px auto 0px auto;
+  max-width: 1000px;
+}
+/* line 9, scss/work.scss */
+.work > div {
+  overflow: hidden;
+  *zoom: 1;
+  padding: 2.5%;
+}
+/* line 14, scss/work.scss */
+.work a {
+  position: relative;
+  display: block;
+  margin: 2.5%;
+  float: left;
+  border: 1px solid black;
+  color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: border .25s ease;
+  transition: border .25s ease;
+}
+/* line 24, scss/work.scss */
+.work a:hover {
+  border: 1px solid #0fa0ce;
+}
+/* line 26, scss/work.scss */
+.work a:hover .label {
+  border-top: 1px solid #0fa0ce;
+  color: #0fa0ce;
+}
+/* line 32, scss/work.scss */
+.work a:active {
+  border: 1px solid #666666;
+}
+/* line 34, scss/work.scss */
+.work a:active .label {
+  border-top: 1px solid #666666;
+  color: #666666;
+}
+/* line 40, scss/work.scss */
+.work a .label {
+  position: absolute;
+  -webkit-transition: border .25s ease;
+  transition: border .25s ease;
+  bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.875);
+  -webkit-backdrop-filter: blur(5px);
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'futura-pt';
+  font-size: 17px;
+  line-height: 18px;
+  padding: 9px 0px 9px 0px;
+  border-top: 1px solid black;
+  -webkit-transition: border .25s ease, color .25s ease;
+  transition: border .25s ease, color .25s ease;
+}
+/* line 57, scss/work.scss */
+.work a .cover-with-image {
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  /* line 67, scss/work.scss */
+  .work a {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  /* line 73, scss/work.scss */
+  .work a {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 720px) {
+  /* line 79, scss/work.scss */
+  .work a {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 960px) {
+  /* line 85, scss/work.scss */
+  .work a {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 961px) {
+  /* line 91, scss/work.scss */
+  .work a {
+    width: 28.333333%;
+  }
+}
+/* line 1, scss/a-work.scss */
+.a-work {
+  margin: 51px auto 0px auto;
+  max-width: 1000px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 7, scss/a-work.scss */
+.a-work .title {
+  text-align: center;
+  margin-top: 18px;
+  font-family: 'futura-pt';
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 31px;
+  padding: 0px 5%;
+}
+/* line 18, scss/a-work.scss */
+.a-work .the-work {
+  display: block;
+  width: 90%;
+  margin: 17px 5% 50px 5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 26, scss/a-work.scss */
+.a-work img {
+  width: 100%;
+  float: left;
+}

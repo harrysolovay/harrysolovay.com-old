@@ -1,0 +1,13 @@
+$hr-color : rgb(221, 221, 221);
+
+hr {
+
+	display : block;
+  width : 100%;
+  height : 1px;
+  margin : 0px;
+  padding : 0px;
+  border-width : 0px;
+  background-color : $hr-color;
+  
+}

@@ -1,0 +1,27 @@
+
+<section ng-cloack class='work' ng-show="type === 'drawing' && currentWorkId === undefined">
+	<div>
+		<a ng-repeat='aWork in work' href='#/work/{{ type }}/{{ aWork.id }}'>
+			<div class='cover-with-image' style='background-image : url(images/{{ type }}/{{ aWork.folder }}/thumbnail.jpg);'></div>
+			<div class='label'>{{ aWork.title }}</div>
+		</a>
+	</div>
+</section>
+
+<section ng-cloack class='work' ng-show="type === 'projects' && currentWorkId === undefined">
+	<div>
+		<a ng-repeat='aWork in work' href='{{ aWork.href }}'>
+			<div class='cover-with-image' style='background-image : url(images/{{ type }}/{{ aWork.folder }}/thumbnail.jpg);'></div>
+			<div class='label'>{{ aWork.title }}</div>
+		</a>
+	</div>
+</section>
+
+<section ng-cloack class='a-work' ng-show="currentWorkId !== undefined">
+	<div>
+		<div class='title'>{{work[currentWorkId].title }}</div>
+		<a class='the-work' href='images/{{ type }}/{{ work[currentWorkId].folder }}/full.jpg'>
+			<img ng-src='images/{{ type }}/{{ work[currentWorkId].folder }}/large.jpg'>
+		</a>
+	</div>
+</section>

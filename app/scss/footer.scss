@@ -1,0 +1,51 @@
+footer {
+
+	text-align : center;
+	font-family : 'futura-pt';
+	font-weight : 300;
+	font-size : 16px;
+	line-height : 21px;
+	text-transform : uppercase;
+	padding : 45px 0px;
+
+	ul {
+		display : block;
+		list-style : none;
+	}
+	
+	li {
+		display : inline-block;
+	}
+	
+	#social-media-links {
+		margin-bottom : 20px;
+		a {
+			padding : 0px 3px;
+			&.linked-in:hover {
+				color : #0077b5;
+			}
+			&.instagram:hover {
+				color : #517fa4;
+			}
+			&.google-plus:hover {
+				color : #dc4e41;
+			}
+			&.github:hover {
+				color : #666666;
+			}
+		}
+	}
+	
+	#copyright {
+		color : rgb(204, 204, 204);
+	}
+	
+	.separator {
+		position : relative;
+		top : -2.5px;
+		font-size : 11px;
+		font-weight : 400;
+		padding : 0px 4px;
+	}
+
+}

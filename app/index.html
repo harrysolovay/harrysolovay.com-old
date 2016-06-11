@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+	<head>
+	
+		<title>harrysolovay.com</title>
+		
+		<!-- compatibility -->
+		<meta charset='utf-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge, chrome=1'>
+		<meta name='HandheldFriendly' content='true'>
+		<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
+		<meta name='apple-touch-fullscreen' content='yes'>
+		<meta name='format-detection' content='telephone=no'>
+		
+		<!-- descriptors, keywords & slight SEO -->
+		<meta name='title' content='Harry Solovay'>
+		<meta name='description' content='I (Harry Solovay) am a student, web developer, writer, and badass drummer. Check out some of my work or get in touch with me here.'>
+		<meta name='keywords' content='harry, solovay, Harry Solovay&#39;s, personal, professional, work, website, about, contact, social, media, instagram, github, git, hub, email, projects, page, pages, product, ux, ui, web, design, designer, developer, programmer, coder, of, internet, sites, websites, online, mobile, applications, apps, student, artist, writer, drummer'>
+		<meta name='robots' content='index, follow'>
+		<meta name='revisit-after' content='10 days'>
+		
+		<!-- people -->
+		<meta name='designer' content='Harry Solovay'>
+		<meta name='copyright' content='Harry Solovay'>
+		
+		<!-- open graph protocol -->
+		<meta property='og:title' content='Harry Solovay'>
+		<meta property='og:description' content='I (Harry Solovay) am a student, web developer, writer, and badass drummer. Check out some of my work or get in touch with me here.'>
+		<meta property='og:image' content='http://www.harrysolovay.com/images/ogp.png'>
+		<meta property='og:url' content='http://www.harrysolovay.com'>
+		<meta property='og:type' content='website'>
+		
+		<!-- twitter card -->
+		<meta name='twitter:title' content='Harry Solovay'>
+		<meta name='twitter:description' content='I (Harry Solovay) am a student, web developer, writer, and badass drummer. Check out some of my work or get in touch with me here.'>
+		<meta name='twitter:image:src' content='http://www.harrysolovay.com/images/ogp.png'>
+		<meta name='twitter:site' content='http://www.harrysolovay.com'>
+		<meta name='twitter:card' content='summary'>
+		
+		<!-- iOS shortcut -->
+		<meta name='apple-mobile-web-app-capable' content='yes'>
+		<meta name='apple-mobile-web-app-status-bar-style' content='black'>
+		<meta name='apple-mobile-web-app-title' content='@HSOLVZ'>
+		
+		<!-- image relational -->
+		<link rel='shortcut icon' href='images/icon/icon.png'>
+		<link rel='icon' href='images/icon/icon.png'>
+		
+		<!-- iOS shortcut image -->
+		<link rel='apple-touch-icon-precomposed' href='$icon' sizes='29x29'>
+		<link rel='apple-touch-icon-precomposed' href='$icon' sizes='50x50'>
+		<link rel='apple-touch-icon-precomposed' href='$icon' sizes='57x50'>
+		<link rel='apple-touch-icon-precomposed' href='$icon' sizes='58x58'>
+		<link rel='apple-touch-icon-precomposed' href='$icon' sizes='60x60'>
+		<link rel='apple-touch-icon-precomposed' href='$icon' sizes='72x72'>
+		<link rel='apple-touch-icon-precomposed' href='$icon' sizes='76x76'>
+		<link rel='apple-touch-icon-precomposed' href='$icon' sizes='87x87'>
+		<link rel='apple-touch-icon-precomposed' href='$icon' sizes='100x100'>
+		<link rel='apple-touch-icon-precomposed' href='$icon' sizes='114x114'>
+		<link rel='apple-touch-icon-precomposed' href='$icon' sizes='120x120'>
+		<link rel='apple-touch-icon-precomposed' href='$icon' sizes='144x144'>
+		<link rel='apple-touch-icon-precomposed' href='$icon' sizes='152x152'>
+		<link rel='apple-touch-icon-precomposed' href='$icon' sizes='180x180'>
+		<link rel='apple-touch-icon-precomposed' href='$icon' sizes='228x228'>
+			
+		<!-- stylesheets -->
+		<link rel='stylesheet' href='style.css'>
+	
+		<!-- scripts -->
+		<script src='https://use.fontawesome.com/f861614818.js'></script>
+		<script src='bundle.js'></script>
+		
+		<!-- web components -->
+		<link rel='import' href='polymer/paper-drawer-panel/paper-drawer-panel.html'>
+		
+	</head>
+	<body ng-app='app' unresolved>
+		<paper-drawer-panel>
+    
+    
+    
+      <nav drawer right-drawer>
+      
+      	<div id='internal'>
+      		<ul>
+      			<li><a ng-class="{ current : currentView == 'About' }" href='#/about' paper-drawer-toggle>&#39;Bout Me</a></li>
+      			<li><a ng-class="{ current : type == 'projects' }" href='#/work/projects' paper-drawer-toggle>Projects</a></li>
+      			<li><a ng-class="{ current : type == 'drawing' }" href='#/work/drawing' paper-drawer-toggle>Drawing</a></li>
+      			<li><a href='mailto:harrysolovay@gmail.com' paper-drawer-toggle>Contact</a></li>
+      		</ul>
+      	</div>
+      	
+      	<div id='external'>
+      		<ul>
+      			<li><a href='https://www.linkedin.com/in/harrysolovay'><i class='fa fa-linkedin-square' aria-hidden='true'></i></a></li>
+      			<li><a href='https://github.com/harrysolovay'><i class='fa fa-github' aria-hidden='true'></i></a></li>
+      			<li><a href='https://www.instagram.com/hsolvz/'><i class='fa fa-instagram' aria-hidden='true'></i></a></li>
+      		</ul>
+      	</div>
+      	
+      </nav>
+      
+      
+    
+      <div main>
+      
+      
+      	<header>
+      		<div id='current-view' ng-cloack>{{ currentView }}</div>
+      		<div paper-drawer-toggle></div>
+      	</header>
+      	
+      	
+  			<div ng-view ng-cloack></div>
+  			
+  			
+  			<hr>
+  			<footer>
+  				
+  				<ul id='social-media-links'>
+      			<li><a class='linked-in' href='https://www.linkedin.com/in/harrysolovay'>LinkedIn</a></li>
+      			<li><a class='github' href='https://github.com/harrysolovay'>GitHub</a></li>
+      			<li><a class='instagram' href='https://www.instagram.com/hsolvz/'>Instagram</i></a></li>
+      			<li><a class='google-plus' href='https://plus.google.com/+HarrySolovay'>Google+</i></a></li>
+      		</ul>
+      		
+      		<div id='copyright'>Copyright &#169; Harry Solovay, <script>document.write(new Date().getFullYear());</script></div>
+  				
+  				<ul id='more-links'>
+  					<li><a href='documents/harry-solovay-cv-06-01-2016.pdf'>Download Resume</a></li>
+  					<li class='separator'>|</li>
+  					<li><a href='https://github.com/harrysolovay/harrysolovay.com-2'>Download Site</a></li>
+  				</ul>
+  				
+  			</footer>
+  			<hr>
+      		
+      	
+      </div>
+			
+			
+			
+    </paper-drawer-panel>
+	</body>
+</html>
